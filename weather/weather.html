@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="heading">Weather app by Tanishq</div>
+    <div class="container">
+        <div class="card1">
+            <div class="upper">
+                <h3 id="day">Monday</h3>
+                 <p id="date">11 june 2024</p>
+                 <i class="fa-solid fa-location-dot"></i>
+                 <p id="location">  Sambhajinagar</p>
+            </div>
+            <div class="image1">
+                <img src="images/clear.png" id="image" >
+            </div>
+            <div id="lower">
+                <p id="temp">29°C</p>
+                <p id="how">Sunny</p>
+            </div>
+        </div>
+        <!-- This is now card 2 -->
+        <div class="card2">
+            <div class="input">
+                <i class="fa-solid fa-magnifying-glass" id="icon"></i>    
+                <input type="text" placeholder="enter city name " id="city" onkeydown="checkEnterKey(event)">
+                <button type="submit" id="search" >Search</button> 
+            </div>
+            <div class="info">
+                <p>Humidity</p><hr>
+                <p>Wind Speed</p><hr>
+                <p>Temperature</p><hr>
+                <p>Feels like</p><hr>
+            </div>
+            <div class="infoValues">
+                <p id="humidity_val">0</p><hr>
+                <p id="wind_val">0</p><hr>
+                <p id="temperature_val">0</p><hr>
+                <p id="feels">0</p><hr>
+            </div>
+
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
